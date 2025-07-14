@@ -1,89 +1,106 @@
-<section id="menu" class="section">
-  <h2>Our Menu</h2>
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Restaurant Menu</title>
+    <link rel="stylesheet" href="styles.css" />
 
-  <!-- Filter Buttons -->
-  <div class="filter-buttons">
-    <button data-filter="all" class="filter-button active">All</button>
-    <button data-filter="breakfast" class="filter-button">Breakfast</button>
-    <button data-filter="lunch" class="filter-button">Lunch</button>
-    <button data-filter="dinner" class="filter-button">Dinner</button>
-    <button data-filter="dessert" class="filter-button">Dessert</button>
-  </div>
+    <!-- Google Fonts for Style -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <section id="menu" class="section">
+      <h2>Our Menu</h2>
 
-  <!-- Menu Grid -->
-  <div class="menu-grid">
-    <div class="menu-item" data-category="lunch">
-      <img src="images\burger.jpg" alt="Bear Burger" />
-      <div>
-        <h3>🐻 Bear Burger</h3>
-        <p>Grilled patty with caramelized onions - $14</p>
+      <!-- Filter Buttons -->
+      <div class="filter-buttons">
+        <button data-filter="all" class="filter-button active">All</button>
+        <button data-filter="breakfast" class="filter-button">Breakfast</button>
+        <button data-filter="lunch" class="filter-button">Lunch</button>
+        <button data-filter="dinner" class="filter-button">Dinner</button>
+        <button data-filter="dessert" class="filter-button">Dessert</button>
       </div>
-    </div>
 
-    <div class="menu-item" data-category="lunch">
-      <img src="images\salad.jpg" alt="Garden Salad" />
-      <div>
-        <h3>🌿 Garden Salad</h3>
-        <p>Fresh greens with avocado and feta - $10</p>
+      <!-- Menu Grid -->
+      <div class="menu-grid">
+        <div class="menu-item" data-category="lunch">
+          <img src="images\burger.jpg" alt="Bear Burger" />
+          <div>
+            <h3>🐻 Bear Burger</h3>
+            <p>Grilled patty with caramelized onions - $14</p>
+          </div>
+        </div>
+
+        <div class="menu-item" data-category="lunch">
+          <img src="images\salad.jpg" alt="Garden Salad" />
+          <div>
+            <h3>🌿 Garden Salad</h3>
+            <p>Fresh greens with avocado and feta - $10</p>
+          </div>
+        </div>
+
+        <div class="menu-item" data-category="dinner">
+          <img src="images\steak.jpg" alt="Grilled Steak" />
+          <div>
+            <h3>🥩 Grilled Steak</h3>
+            <p>Premium cut grilled to perfection - $22</p>
+          </div>
+        </div>
+
+        <div class="menu-item" data-category="breakfast">
+          <img src="images\pancakes.jpg" alt="Fluffy Pancakes" />
+          <div>
+            <h3>🥞 Fluffy Pancakes</h3>
+            <p>Stacked with maple syrup - $9</p>
+          </div>
+        </div>
+
+        <div class="menu-item" data-category="breakfast">
+          <img src="images\coffee.jpg" alt="Artisan Coffee" />
+          <div>
+            <h3>☕ Artisan Coffee</h3>
+            <p>Locally roasted beans - $4</p>
+          </div>
+        </div>
+
+        <div class="menu-item" data-category="dinner">
+          <img src="images\pasta.jpg" alt="Rustic Pasta" />
+          <div>
+            <h3>🍝 Rustic Pasta</h3>
+            <p>Handmade pasta with tomato sauce - $13</p>
+          </div>
+        </div>
+
+        <div class="menu-item" data-category="dessert">
+          <img src="images\lava cake.jpg" alt="Lava Cake" />
+          <div>
+            <h3>🍫 Lava Cake</h3>
+            <p>Warm cake with molten chocolate center - $8</p>
+          </div>
+        </div>
+
+        <div class="menu-item" data-category="lunch">
+          <img src="images\soup.jpg" alt="Soup of the Day" />
+          <div>
+            <h3>🍲 Soup of the Day</h3>
+            <p>Ask your server for today’s seasonal soup - $7</p>
+          </div>
+        </div>
       </div>
-    </div>
 
-    <div class="menu-item" data-category="dinner">
-      <img src="images\steak.jpg" alt="Grilled Steak" />
-      <div>
-        <h3>🥩 Grilled Steak</h3>
-        <p>Premium cut grilled to perfection - $22</p>
+      <!-- Download Menu PDF -->
+      <div class="menu-pdf">
+        <a href="BrotherBearMenu.pdf" download class="download-btn"
+          >📄 Download Full Menu (PDF)</a
+        >
       </div>
-    </div>
-
-    <div class="menu-item" data-category="breakfast">
-      <img src="images\pancakes.jpg" alt="Fluffy Pancakes" />
-      <div>
-        <h3>🥞 Fluffy Pancakes</h3>
-        <p>Stacked with maple syrup - $9</p>
-      </div>
-    </div>
-
-    <div class="menu-item" data-category="breakfast">
-      <img src="images\coffee.jpg" alt="Artisan Coffee" />
-      <div>
-        <h3>☕ Artisan Coffee</h3>
-        <p>Locally roasted beans - $4</p>
-      </div>
-    </div>
-
-    <div class="menu-item" data-category="dinner">
-      <img src="images\pasta.jpg" alt="Rustic Pasta" />
-      <div>
-        <h3>🍝 Rustic Pasta</h3>
-        <p>Handmade pasta with tomato sauce - $13</p>
-      </div>
-    </div>
-
-    <div class="menu-item" data-category="dessert">
-      <img src="images\lava cake.jpg" alt="Lava Cake" />
-      <div>
-        <h3>🍫 Lava Cake</h3>
-        <p>Warm cake with molten chocolate center - $8</p>
-      </div>
-    </div>
-
-    <div class="menu-item" data-category="lunch">
-      <img src="images\soup.jpg" alt="Soup of the Day" />
-      <div>
-        <h3>🍲 Soup of the Day</h3>
-        <p>Ask your server for today’s seasonal soup - $7</p>
-      </div>
-    </div>
-  </div>
-
-  <!-- Download Menu PDF -->
-  <div class="menu-pdf">
-    <a href="BrotherBearMenu.pdf" download class="download-btn"
-      >📄 Download Full Menu (PDF)</a
-    >
-  </div>
-</section>
+    </section>
+  </body>
+</html>
 
 <script>
   // Mobile Menu Toggle
