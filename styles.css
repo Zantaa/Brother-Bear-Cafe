@@ -74,4 +74,34 @@ body {
 .menu-item[data-category="dessert"] {
   border-top: 4px solid #cc99ff;
 }
+.menu-category {
+  margin-top: 3rem;
+}
+
+.menu-category h3 {
+  font-size: 2rem;
+  font-family: 'Playfair Display', serif;
+  color: #2c3e50;
+  text-align: center;
+  margin-bottom: 1rem;
+  border-bottom: 2px solid #ccc;
+  padding-bottom: 0.5rem;
+}
+
+.filter-buttons a {
+  background: #eee;
+  color: #333;
+  padding: 0.6rem 1.2rem;
+  text-decoration: none;
+  border-radius: 5px;
+  margin: 0.5rem;
+  display: inline-block;
+  transition: background 0.3s ease;
+}
+
+.filter-buttons a:hover {
+  background: #000;
+  color: #fff;
+}
+
 
